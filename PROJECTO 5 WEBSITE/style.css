@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+#font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root {
+	--cor0: #c5ebd6;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2ea865;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+
+	--fonte-padrao: arial, verdana, helvetica, sans-serif; 
+    --fonte-android: 'android', cursive;
+}
+
+:root {
+	--cor00: #d1d7f1;
+    --cor1: rgb(163, 181, 241);
+    --cor2: #628cf5;
+    --cor3: #2f56a3;
+    --cor4: #223e69;
+    --cor5: #0c2855;
+
+	--fonte-padrao: arial, verdana; 
+    --fonte-android: 'android', cursive;
+}
+
+
+/* a divisao*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: var(--cor00);
+	font-family: var(--fonte-padrao);	
+}
+header {
+	padding-top: 30px;
+	text-align: center;
+	min-height: 150px;
+	background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+}
+header > h1 {
+	font-family: var(--fonte-padrao);
+	color: white;
+	font-size: 2.5em;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.254);
+	margin-bottom: 20px;
+}
+header > p {
+	color: white;
+	margin: auto;
+	font-weight: bold;
+    font-family: var(--fonte-padrao);
+	max-width: 700px;
+    font-size: 1.2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.233);
+}
+
+
+nav {
+	background-color: var(--cor5);
+    padding: 10px;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.167);
+}
+
+nav a {
+	color: var(--cor00);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+
+nav a:hover {
+	background-color: var(--cor2);
+    color: var(--cor5);
+	padding: 6px;
+}
+
+main {
+	text-align: justify;
+	padding: 20px;
+    min-width: 100px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #00000069;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main > article {
+	max-width: 800px;
+	min-width: 100px;
+	padding: 3px;
+}
+
+main h1 {
+	font-family: var(--fonte-padrao);
+	color: var(--cor5);
+	padding: 5px 0px 6px 3px;
+	text-shadow: 0px 0px 1px black;
+
+}
+
+main h2 {
+	font-family: var(--fonte-padrao);
+	color: var(--cor4);
+	background-image: linear-gradient(to right, var(--cor00), transparent);
+	font-size: 1.3em;
+}
+main p {
+	margin: 15px 0px;
+	text-indent: 30px;
+	line-height: 2.8em;
+	text-align: justify;
+
+}
+main li{
+	color: var(--cor3);
+}
+main b {
+	font-weight: bolder;
+	color: var(--cor5);
+}
+
+main strong {
+	color: var(--cor3);
+	background-color: var(--cor1);
+	padding: 2px;
+	transition-duration: .2s;
+	margin: 0px 3px;
+}
+main strong:hover {
+	text-decoration: underline;
+	color: var(--cor5);
+}
+
+
+main img {
+	max-width: 600px;
+	width: 100%;
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+}
+main ul {
+	list-style-position: inside;
+	list-style: none;
+}
+main li {
+	padding: 5px;
+}
+
+table#tabela {
+	margin: 15px 0px 0px 0px;
+	 border: 1px solid black;
+	 border-spacing: 0px;
+	 margin-left: auto;
+	 margin-right: auto; 
+}
+table#tabela td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: right;
+}
+table#tabela td.ce {
+	color: var(--cor05);
+	background-color: var(--cor01);
+	vertical-align: top;
+	font-weight: bold;
+}
+table#tabela td.cd {
+	color: var(--cor0);
+	font-weight: bolder;
+	background-color: var(--cor03);
+	text-align: left;
+}
+table#tabela caption {
+	font-size: 15pt;
+	font-family: cool jazz;
+	font-weight: bolder; 
+}
+
+div > audio {
+	display: block;
+	background-color: var(--cor1);
+	border-radius: 46px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+aside {
+	max-width: 800px;
+	min-width: 100px;
+	background-color: var(--cor1);
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+aside h1 {
+	margin: -10px -10px 0px -10px;
+	border-radius: 10px 10px 0px 0px;
+	color: white;
+	background-color: var(--cor4);
+	font-family: arial;
+	font-size: 16pt;
+	padding: 10px;
+}
+
+
+
+
+
+aside  h2 {
+	font-family: arial;
+	font-size: 1.1em;
+	color: #125189;
+	padding: 4px;
+	font-weight: bolder;
+
+}
+
+aside p > b{
+	color: var(--cor5);
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+ footer {
+	 background-color: var(--cor5);
+	 text-align: center;
+	 color: white;
+	 font-size: 1em;
+	 padding: 5px;
+	 margin-top: 20px;
+ }
+
+footer a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bolder;
+	text-align: center;
+}
+
+
+ footer a:hover {
+	 text-decoration: underline;
+	 color: white;
+ }

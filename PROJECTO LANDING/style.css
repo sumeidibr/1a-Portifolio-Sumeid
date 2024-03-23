@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+   font-size: 100%; 
+   background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+
+/*----------BARRA DE MENU---------*/
+nav{
+    background:#582d23;
+    padding: 5px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-link:hover{
+    background-color: rgba(0, 255, 255, 0.452);
+    border-radius: 10px;
+    transition: ease-in 0.4s;
+    padding: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    transform: ease-in;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+}
+.logo a{
+    font-size: 20px;
+}
+.button.secondary{
+    border-bottom: 1px #444 solid;
+}
+/*mobile menu*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle{
+    order: 1;
+}
+
+.item.button{
+    order: 2;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+
+
+.toggle{
+cursor: pointer;
+}
+
+.bars{
+    background: rgb(253, 253, 253);
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 22px;
+}
+.bars::before,.bars::after{
+    background: rgb(196, 7, 7);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 22px;
+}
+
+.bars::before{
+    top: 5px;
+}
+
+.bars::after{
+    top: -5px;
+}
+
+/*--------------------FIM BARRA DE MENU----------------*/
+
+
+.conteudo {
+    border-top: 0.4px solid #FFF2E7;
+    margin-bottom: 48px;
+    top: 60px;
+    position: relative;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap:  32px;
+}
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    color: #FFF2E7;
+    font-size: 64px;
+    font-weight: 400;
+}
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: #2F2325;
+    font-size: 24px;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: rgba(246, 214, 196, 0.53);
+}
+.conteudo-principal-imagem {
+    height: 400px;
+}
+.secundario-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
+}
+.conteudo-secundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px; 
+    color: #ECD6C4;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto; 
+}
+
+@media (max-width: 600px){
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+/* Configuracao barra de menu*/ 
+@media all and (min-width:468px){
+    .menu{
+     justify-content: center;
+    } 
+    .logo{
+     flex: 1;
+    }
+    .item.button{
+     width: auto;
+     order: 1;
+     display: block;
+    }
+ 
+    .toggle{
+     order:2;
+    }
+    .button.secondary{
+     border: 0;
+    }
+ 
+    .button a{
+     text-decoration: none;
+     padding: 7px 15px;
+     background: teal;
+     border: 1px solid #006d6d;
+     border-radius: 50em;
+    }
+ 
+    .button-secondary a{
+     background: transparent;
+    }
+    .button a:hover{
+     transition: all .25s;
+    }
+    .button:not(.secondary) a:hover{
+     background: #006d6d;
+     border-color: #005959;
+    }
+    .button.secondary a:hover{
+     color: #ddd;
+    }
+ }
+ 
+ 
+ @media all and (min-width: 768px){
+     .item{
+         display: block;
+         width: auto;
+     }
+     .toggle{
+         display: none;
+     }
+     .logo{
+         order: 0;
+     }
+     .item{
+         order: 0;
+     }
+     .button{
+         order: 2;
+     }
+ 
+     .menu li{
+         padding: 15px 10px;
+     }
+     .menu li.button{
+         padding-right: 0;
+     }
+     
+ }

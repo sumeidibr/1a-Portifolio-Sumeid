@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+:root {
+	--cor0: #c5ebd6;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2fa866;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+
+	--fonte-padrao: arial, verdana, helvetica, sans-serif; 
+    --fonte-android: 'android', cursive;
+}
+
+body {
+	background-color: #c5ebd6;
+}
+header{
+	background-color: #1a5c37;
+	min-height: 140px;
+	text-align: center;
+	padding-top: 30px;
+}
+header h1{
+	color: white;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 1.9em;
+}
+header p{
+	color: white;
+	font-size: 1.2em;
+	font-family: 'android', cursive;
+	max-width: 600px;
+	margin: auto;
+}
+nav {
+    background-color: var(--cor05);
+    padding: 10px;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.167);
+	background-color: #1a5c37;
+}
+nav a {
+    color: #83e1ad;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav a:hover {
+    background-color: var(--cor02);
+    color: var(--cor05);
+}
+
+main{
+	padding: 20px;
+	max-width: 800px;
+	min-width: 300px;
+	margin: auto;
+	background-color: white;
+	box-shadow: 2px 2px 10px black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-bottom: 25px;
+}
+main h1{
+	text-align: center;
+	font-size: 1.9em;
+	color: #1a5c37;
+	font-family: cursive;
+	font-weight: bold;
+}
+main p{
+	text-align: center;
+}
+input#botao{
+	background-color: rgb(6, 61, 30);
+	padding: 7px;
+	font-size: 0.9em;
+	color: #83e1ad;
+	border-radius: 10px;
+	margin: 10px;
+	border-style: initial;
+	box-shadow: 1px 1px 1px black;
+	
+}
+
+input#botao:hover{
+	color: #08833d;
+}
+
+
+
+
+main img {
+	width: 100%;
+}
+aside{
+	background-color:  #84fdbb;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.267);
+}
+aside > h3{
+	margin: -10px -10px 0px -10px;
+	background-color: #042c15;
+	padding-top: 10px;
+	border-radius: 10px 10px 0px 0px;
+	padding-bottom: 10px;
+	color: #83e1ad;
+	padding-left: 10px;
+}
+aside > p {
+	margin: 7px;
+	text-align: justify;
+}
+
+div#aside{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+div#aside > a {
+
+	color: #011b0c;
+	text-decoration: none;
+	font-family: 'sarala', serif;
+}
+
+div#aside > a:hover{
+	text-decoration: underline;
+}
+
+
+
+

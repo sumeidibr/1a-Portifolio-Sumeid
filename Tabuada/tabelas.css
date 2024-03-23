@@ -1,0 +1,26 @@
+body{
+    background: rgb(4, 153, 153);
+}
+header{
+    text-align: center;
+    font-family: 'sarala', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.562);
+    }
+    section{
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        width: 500px;
+        margin: auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);
+    }
+    footer{
+        text-align: center;
+        font-family: 'sarala', sans-serif;
+        color: white;
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 15pt;
+    }

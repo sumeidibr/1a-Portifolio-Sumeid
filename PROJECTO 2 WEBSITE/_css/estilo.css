@@ -1,0 +1,196 @@
+@charset "UTF-8";
+body {
+	background-color: #dddddd;
+}
+
+p {
+	text-align: justify;
+}
+div#interface {
+	border-top: 0.4px solid #FFF2E7;
+	width: 900px;
+	margin: -20px auto 0px auto;
+	background-color: #ffffff;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0.0.0.5);
+	
+}
+hgroup#textos h1{
+	font-family:cool jazz;
+	font-size: 14pt;
+	color: #606060;
+	padding: 5px;
+	margin: 3px;
+}
+#textos h3 {
+	font-family: cool jazz;
+	font-size: 14pt;
+	background-color: #dddddd;
+	color: #606060;
+	padding: 5px;
+	margin: 3px;
+}
+#textos h2 {
+	font-family: cool jazz;
+	font-size: 14pt;
+	color: #dddddd;
+	padding: 5px;
+	margin: 3px;
+}
+/*formatacao do menu principal */
+
+.barra {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+
+
+
+
+nav > a {
+	font-family: 'righteous', cursive;
+	font-size: 14pt;
+	text-decoration: none;
+	background: #606060;
+	color: white;
+	padding: 4px;
+	border-radius: 8px;
+	margin: 2px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/*nav#menu ul {
+	display: block;
+	position: absolute;
+	top: -27px;
+	left: 400px;
+	list-style: none;
+	text-transform: uppercase;
+	}*/
+	
+nav#menu li {
+	position: relative;
+	background-color: cccccc;
+	margin: 15px;
+	padding: 5px;
+	display: inline-block;
+}
+
+ section#corpo {
+	 display: block;
+	 border-right: 1px #606060 solid;
+	 width: 510px;
+	 float: left;
+	 padding: 5px;
+ }
+header#cabecalho-artigo h1{
+	background-color: #606060;
+	color: #000000;
+}
+
+
+/*formatacao de imagem com legenda*/
+
+figure#foto-legenda {
+	width: 440px;
+	position: relative;
+	border: 8px solid #ffffff;
+	box-shadow: 2px 2px 2px #dddddd;
+}
+figure#foto-legenda img {
+	width: 100%;
+	height: 60%;
+}
+figure#foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	transition: 1s;
+	background-color: rgba(0,0,0,.4);
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	font-size: 10pt;
+	box-sizing: border-box;
+	padding: 10px;
+}
+figure#foto-legenda:hover figcaption {
+	opacity: 1;
+}
+/*formatacao da tabela*/
+
+table#tabela {
+	border: 1px solid #000000;
+	border-spacing: 0px;
+	width: 30%;
+	height: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#tabela caption {
+	font-size: 14pt;
+	font-family: cool jazz;
+	font-weight: bolder;
+}
+table#tabela td {
+	text-align: right;
+	border: 1px solid #606060;
+	padding: 7px;
+	
+}
+table#tabela td.ce {
+	color: #ffffff;
+	font-size: 14pt;
+	font-family: cool jazz;
+	font-weight: bold;
+	background-color: #606060;
+	vertical-align: top;
+}
+table#tabela td.cd {
+	background-color: #cecece;
+	font-size: 14pt;
+	text-align: left;
+}
+/*formatacao do video */
+video#video {
+	width: 400px;
+	border: 1px solid #ffffff;
+	box-shadow: 2px 2px 2px 2px #cccccc;
+}
+aside#lateral {
+	border-top: 0.4px solid #FFF2E7;
+	display: block;
+	float: right;
+	width: 310px;
+	padding: 10px;
+	background-color: #cecece;
+	margin-top: 10px;
+}
+aside#lateral h1 {
+	font-size: 13pt;
+	background-color: #606060;
+	padding: 10px;
+	color: #ffffff;
+	font-family: arial;
+}
+aside#lateral h2 {
+	background-color: #606060;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 14pt;
+	font-family: arial;
+}
+/*aside#lateral {
+	background: url("../_imagens/radio-tv.png") no-repeat;
+}*/
+video#videoaside {
+	width: 300px;
+}
+footer#rodape {
+	border-top: 1px solid #000000;
+	clear: both;
+}

@@ -1,0 +1,360 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor01: #587ae9;
+    --cor02: #3b1fbb;
+    --cor03: #e6ebff;
+    --cor04: #d9e1fc;
+}
+
+
+body{
+    background: rgb(250, 248, 248);
+    font-family: 'sarala', sans-serif;
+    line-height: 30px;
+}
+
+/*----------BARRA DE MENU---------*/
+nav{
+    background:  #1278a3;
+    padding: 5px 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    transform: ease-in;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+}
+.logo a{
+    font-size: 20px;
+}
+.button.secondary{
+    border-bottom: 1px #444 solid;
+}
+/*mobile menu*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle{
+    order: 1;
+}
+
+.item.button{
+    order: 2;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+
+
+.toggle{
+cursor: pointer;
+}
+
+.bars{
+    background: rgb(253, 253, 253);
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 22px;
+}
+.bars::before,.bars::after{
+    background: rgb(255, 255, 255);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 22px;
+}
+
+.bars::before{
+    top: 5px;
+}
+
+.bars::after{
+    top: -5px;
+}
+
+
+
+/*--------------------FIM BARRA DE MENU----------------*/
+.seccao3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 220px;
+    margin: auto;
+    padding: 10px;
+}
+
+.adicionada1{
+   text-align: justify;
+   margin: auto;
+   max-width: 500px;
+   padding-left: 4px;
+   padding-right: 4px;
+   margin-top: 20px;
+}
+
+.adicionada1 h2{
+    margin-top: 0px;
+    text-align: center;
+}
+
+.divisao-impar{
+    margin: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    background: #f5f7f8;
+}
+
+.img-blog{
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.botao-blog{
+   
+    border-style: none;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    color: #0a3fee;
+    font-size: 11pt;
+    margin-top: 10px;
+    background-color: rgba(178, 245, 245, 0.459);
+}
+.divisao-impar > h3{
+    text-align: left;
+    color: #071c61;
+}
+.divisao-impar > p{
+    font-size: 11pt;
+    padding-top: 5px;
+}
+
+footer{
+    background: rgb(1, 66, 66);
+    padding: 40px;
+}
+
+
+
+
+svg#media{
+    position: relative;
+    top: 50%;
+    left: 47%;
+    color: white;
+    margin:10px;
+}
+
+svg#whatssap-link{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 1px 1px 3px #888;
+}
+
+img#whatssap-icone{
+    position: fixed;
+   top: 80%;
+   left: 70%;
+}
+
+
+.links-rapidos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links{
+margin: auto;
+margin-bottom: 20px;
+}
+
+ul > li{
+    list-style: none;
+    color: black;
+    margin: 12px;
+}
+.lista-item{
+    color: black;
+    list-style: none;
+    margin: -6px;
+    margin-bottom: 2px;
+    margin-left: 17px;
+}
+
+.lista-item:hover{
+    text-decoration: underline;
+}
+footer > p{
+    color: white;
+    text-align: center;
+    font-size: 12pt;
+}
+
+
+@media (max-width: 900px){
+    .seccao3{
+        display: flex;
+        flex-direction: column;
+    }
+    .divisao-impar{
+    width: 83%;
+    padding: 30px;
+    
+    }
+}
+ 
+
+@media (max-width: 500px){
+    
+.seccao3{
+    display: flex;
+    flex-direction: column;
+}
+.divisao-impar{
+width: 83%;
+padding: 30px;
+
+}
+
+input#botao{
+    margin-bottom: 20px;
+}
+.wrapper{
+    min-width: 80%;
+}
+
+}
+
+@media(max-width: 340px){
+    .links-rapidos{
+        display:flex;
+        flex-direction: column;
+        font-size: 11.4pt;
+    }
+
+}
+
+/*FIM WEBSITE ESTRUTURA CELULAR*/
+
+
+
+
+/* Configuracao barra de menu*/ 
+@media all and (min-width:468px){
+    .menu{
+     justify-content: center;
+    } 
+    .logo{
+     flex: 1;
+    }
+    .item.button{
+     width: auto;
+     order: 1;
+     display: block;
+    }
+ 
+    .toggle{
+     order:2;
+    }
+    .button.secondary{
+     border: 0;
+    }
+ 
+    .button a{
+     text-decoration: none;
+     padding: 7px 15px;
+     background: teal;
+     border: 1px solid #006d6d;
+     border-radius: 50em;
+    }
+ 
+    .button-secondary a{
+     background: transparent;
+    }
+    .button a:hover{
+     transition: all .25s;
+    }
+    .button:not(.secondary) a:hover{
+     background: #006d6d;
+     border-color: #005959;
+    }
+    .button.secondary a:hover{
+     color: #ddd;
+    }
+ }
+ 
+ 
+ @media all and (min-width: 768px){
+     .item{
+         display: block;
+         width: auto;
+     }
+     .toggle{
+         display: none;
+     }
+     .logo{
+         order: 0;
+     }
+     .item{
+         order: 0;
+     }
+     .button{
+         order: 2;
+     }
+ 
+     .menu li{
+         padding: 15px 10px;
+     }
+     .menu li.button{
+         padding-right: 0;
+     }
+     
+ }
